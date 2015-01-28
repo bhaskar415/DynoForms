@@ -65,13 +65,14 @@ myApp.controller(
 			//DELETE specific Table from main listing table Ends 
 			
 			//READ specific Form DETAILS from main listing $scope.forms Starts 
-	     	$scope.getFormDetails = function( form ) {
+	     	$scope.getFormDetails = function( form ) {			
 				$scope.form = form;		
 	          	idUrl = $scope.form._links.self.href
 				constructUrls.baseUrl()
 				id = idUrl.replace(constructUrls.baseUrl() + "/forms/", "");
 			$scope.newData = {"formId": id};
 			$scope.formDataUrl = $scope.form._links.formData.href
+			$scope.tab = 1;
 		  };
 			//READ specific Form DETAILS from main listing $scope.forms Ends 
 
@@ -118,7 +119,7 @@ myApp.controller(
 					$scope.tab = setTab;
 					
 					//Automically calling the getTableData function to load on of data tab which is 3
-					if ($scope.tab === 3){
+					if ($scope.tab === 2){
 					   $scope.getFormData();
 					}
 					

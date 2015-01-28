@@ -34,7 +34,7 @@ var htmlTemplate =  "<div >"+
 appFac.directive('appfacPanel', function(){
   return {
     restrict: 'E',
-	template: '<section><ul class="nav nav-tabs nav-justified"><li ng-class="{active:isSelected(1)}"> <a href ng-click="selectTab(1)">Form</a> </li><li ng-class="{active:isSelected(2)}"> <a href ng-click="selectTab(2)">Table Details</a> </li><li ng-class="{active:isSelected(3)}"> <a href ng-click="selectTab(3)">Column Details</a> </li> </ul></section><div class="panel" ng-show="tab === 1"><form-view></form-view></div><div class="panel" ng-show="tab === 2"><table-details></table-details></div><div class="panel" ng-show="tab === 3"><table-data></table-data></div>'
+	template: '<section><ul class="nav nav-tabs nav-justified"><li ng-class="{active:isSelected(1)}"> <a href ng-click="selectTab(1)">Form</a> </li><li ng-class="{active:isSelected(2)}"> <a href ng-click="selectTab(2)">Form Data</a> </li><li ng-class="{active:isSelected(3)}"> <a href ng-click="selectTab(3)">Form Details</a> </li> </ul></section><div class="panel" ng-show="tab === 1"><form-view></form-view></div><div class="panel" ng-show="tab === 2"><table-data></table-data></div><div class="panel" ng-show="tab === 3"><table-details></table-details></div>'
 	//templateUrl: "C:\Users\bxy236\Desktop\website\OIM_Tree_Using_Angula\application-details.html"  //have CORS issue using the differnt html pages 
   };
 });
