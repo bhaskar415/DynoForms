@@ -50,7 +50,6 @@ myApp.service(
 				
 				var applicationUpdateUrl = application._links.self.href;
 				
-				alert(applicationUpdateUrl);
                 
 				
 				var request = $q.defer();				
@@ -136,7 +135,6 @@ myApp.service(
 				
 		
 		this.getFormData = function(url, $scope) {
-		alert(url);
 			httpCURDOperations.Get(url).then(
                             function( data ) {
 							$scope.formData = data._embedded.formsData;

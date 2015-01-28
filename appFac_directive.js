@@ -20,8 +20,6 @@ var htmlTemplate =  "<div >"+
 							"</table>"+
 							"<div class='alert alert-dismissable alert-warning'><button type='button' class='close' data-dismiss='alert'>x</button>Select any row to copy sample data into form</div>"+
 							//<!--Dynamic table Form using diffrenent columns and ng-table tag Ends-->
-						 "<pre>{{ newData| json }}</pre>"+
-
 						"</div>";
   return {
     restrict: 'E',
